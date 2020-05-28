@@ -1,5 +1,5 @@
 # Analyzing-Police-Activity-with-Pandas
-Analyzing data sets to answer interesting questions about a real data set.
+On this project I analyze data sets to answer interesting questions about a real data set.
 Outcome: cleaning messy data, creating visualization, combining and reshaping data sets, and manipulating time series data. Giving conclusions to questions:
 1. Does the gender of a driver have an impact on police behavior during a traffic stop?
 2. Are you more likely to get arrested at a certain time of day?
