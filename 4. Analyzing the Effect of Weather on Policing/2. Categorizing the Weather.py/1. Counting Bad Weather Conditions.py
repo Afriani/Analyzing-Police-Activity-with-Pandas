@@ -1,0 +1,23 @@
+# Import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
+# Import Pandas
+import pandas as pd
+
+# Read 'weather.csv' into a DataFrame named ri
+weather = pd.read_csv('C:/Users/Hp ProBook 640/Documents/Analyzing Police Activity with Pandas/DATA/weather.csv')
+
+# Copy 'WT01' through 'WT22' to a new DataFrame
+WT = weather.loc[:, "WT01":"WT22"]
+
+# Calculate the sum of each row in 'WT'
+weather['bad_conditions'] = WT.sum(axis='columns')
+
+# Replace missing values in 'bad_conditions' with '0'
+weather['bad_conditions'] = weather.bad_conditions.fillna(0).astype('int')
+
+# Create a histogram to visualize 'bad_conditions'
+weather.bad_conditions.plot(kind='hist')
+
+# Display the plot
+plt.show()
